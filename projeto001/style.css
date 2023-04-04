@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+:root{
+  --color-blue:blue;
+  --color-blu2:rgb(108, 108, 222);
+  --color-branco:white;
+  --color-black:black;
+  --color-black2:#272727;
+}
+
+
+*{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Outfit', sans-serif;
+}
+header{
+    background-color: #272727;
+    width: 100%;
+}
+
+img{
+
+        width: 76px;
+        padding: 0;
+}
+
+.menu > nav > a{
+    text-decoration:none;
+    color: var(--color-branco);
+    padding: 20px;
+    position: relative;
+}
+
+.menu  nav  a::after{
+    content: " ";
+    width: 0px;
+    height: 5px;
+    background-image: linear-gradient(45deg,#320D5E,#b58fe2);
+    position: absolute;
+    top:40px;
+    left: 22px;
+}
+
+.menu  nav  a:hover:after{
+    width: 50px;
+    transition: 1s;
+
+}
+
+.container{
+    display: flex;
+    max-width: 1080px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+
+   
+}
+.logo,.sociais{
+    width: 25%;
+    
+}
+
+.menu{
+    width: 50%;
+    padding: 10px;
+}
+.sociais button{
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+    background-image: linear-gradient(45deg,#320D5E,#b58fe2);
+    border:none;
+    border-radius: 4px;
+    cursor: pointer;
+
+
+}
+
+.sociais button >i{
+    color: var(--color-branco);
+    font-size: 17px;
+
+}
+
